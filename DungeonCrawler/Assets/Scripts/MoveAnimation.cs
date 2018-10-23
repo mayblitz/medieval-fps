@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class EquippedAnimation : MonoBehaviour {
-
+public class MoveAnimation : MonoBehaviour
+{
     public CharacterController character;
 
     Animator animator;
@@ -11,16 +9,18 @@ public class EquippedAnimation : MonoBehaviour {
     float tempTime;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         animator = GetComponent<Animator>();
         lastPosition = character.transform.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         tempTime += Time.deltaTime;
 
-        if (tempTime > 0.02)
+        if (tempTime > 0.05)
         {
             if (!character.isGrounded)
                 animator.SetBool("isFalling", true);
@@ -34,11 +34,10 @@ public class EquippedAnimation : MonoBehaviour {
                     lastPosition = character.transform.position;
                 }
                 else
-                {
                     animator.SetBool("isMoving", false);
-                }
             }
+
             tempTime = 0;
         }
-	}
+    }
 }
