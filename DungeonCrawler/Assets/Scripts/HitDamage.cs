@@ -1,48 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Stats))]
 public class HitDamage : MonoBehaviour, IHittable
 {
     Stats stats;
-    EnemyAI enemyAI;
-    Animation animation;
+    IKillable killable;
+
+    bool isDead = false;
 
     void Start()
     {
         stats = GetComponent<Stats>();
-        enemyAI = GetComponent<EnemyAI>();
-        animation = GetComponent<Animation>();
+        killable = (IKillable)GetComponent(typeof(IKillable));
+        if (killable == null)
+            throw new MissingComponentException("Requires implementation of IKillable");
     }
 
     public void Hit(int damage)
     {
         stats.health -= damage;
 
-        if (stats.health <= 0)
+        if (stats.health <= 0 && !isDead)
         {
-            animation.Play("death");
-            enemyAI.enabled = false;
-            StartCoroutine(Destroy());
+            isDead = true;
+            killable.Kill();
         }
-    }
-
-    IEnumerator Destroy()
-    {
-        yield return new WaitForSeconds(2);
-
-        float currentY = gameObject.transform.position.y;
-        float targetY = gameObject.transform.position.y - 2;
-
-        while (currentY > targetY)
-        {
-            gameObject.transform.Translate(Vector3.down * Time.deltaTime);
-            currentY = gameObject.transform.position.y;
-            yield return null;
-        }
-
-        Destroy(gameObject);
     }
 }
