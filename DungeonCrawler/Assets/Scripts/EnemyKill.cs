@@ -6,17 +6,20 @@ public class EnemyKill : MonoBehaviour, IKillable
 {
     EnemyAI enemyAI;
     EnemyAnimator animator;
+    CapsuleCollider collider;
 
     void Start()
     {
         enemyAI = GetComponent<EnemyAI>();
         animator = GetComponent<EnemyAnimator>();
+        collider = GetComponent<CapsuleCollider>();
     }
 
     public void Kill()
     {
         animator.Die();
         enemyAI.enabled = false;
+        collider.enabled = false;
         StartCoroutine(Destroy());
     }
 
