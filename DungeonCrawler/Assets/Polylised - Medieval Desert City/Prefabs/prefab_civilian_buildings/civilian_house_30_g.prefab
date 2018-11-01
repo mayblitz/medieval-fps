@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4622662298020494}
   - component: {fileID: 33524614625197998}
   - component: {fileID: 23620805652228846}
+  - component: {fileID: 64664120534628092}
   m_Layer: 0
   m_Name: civilian_house_30_g
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4622662298020494
 Transform:
@@ -86,4 +87,18 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1630034267884050}
+  m_Mesh: {fileID: 4300000, guid: b135ccb94c54ece4eaefacb0c5c8fff6, type: 3}
+--- !u!64 &64664120534628092
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630034267884050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b135ccb94c54ece4eaefacb0c5c8fff6, type: 3}
