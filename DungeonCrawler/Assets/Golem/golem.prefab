@@ -710,7 +710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4491218564541704}
-  - component: {fileID: 111639268682051488}
+  - component: {fileID: 95246139398177840}
   - component: {fileID: 136337525434497370}
   - component: {fileID: 114223250167154778}
   - component: {fileID: 114415964653691156}
@@ -1825,29 +1825,24 @@ Transform:
   m_Father: {fileID: 4844045869168564}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.000034566638, y: 44.015873, z: -89.99994}
---- !u!111 &111639268682051488
-Animation:
+--- !u!95 &95246139398177840
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1691277210150122}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400002, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400004, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400006, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400008, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400010, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400012, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400014, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  - {fileID: 7400016, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 1
+  m_Avatar: {fileID: 9000000, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
+  m_Controller: {fileID: 9100000, guid: 9a730ac359af66245939dc9d42cd2327, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114223250167154778
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -17,7 +17,7 @@ public class EnemyKill : MonoBehaviour, IKillable
 
     public void Kill()
     {
-        animator.Die();
+        animator.DieAnimation();
         enemyAI.enabled = false;
         collider.enabled = false;
         StartCoroutine(Destroy());

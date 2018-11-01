@@ -2,37 +2,54 @@
 
 public class EnemyAnimator : MonoBehaviour
 {
-    public string idle = "idle";
-    public string walk = "walk";
-    public string death = "death";
-    public string attack = "punch";
+    //public string idle = "idle";
+    //public string walk = "walk";
+    //public string death = "death";
+    //public string attack = "punch";
 
-    Animation animation;
+    //Animation animation;
+    Animator animator;
 
     private void Start()
     {
-        animation = GetComponent<Animation>();
+        //animation = GetComponent<Animation>();
+        animator = GetComponent<Animator>();
     }
 
-    public void Idle()
+    public void IdleAnimation()
     {
-        if (!animation.IsPlaying(idle))
-            animation.CrossFade(idle);
+        //if (!animation.IsPlaying(idle))
+        //    animation.CrossFade(idle);
+
+        //if (isWalking)
+        //{
+        //    isWalking = !isWalking;
+            animator.SetBool("isWalking", false);
+        //}
     }
 
-    public void Walk()
+    public void WalkAnimation()
     {
-        if (!animation.IsPlaying(walk))
-            animation.CrossFade(walk);
+        //if (!animation.IsPlaying(walk))
+        //    animation.CrossFade(walk);
+        //if (!isWalking)
+        //{
+        //    isWalking = !isWalking;
+            animator.SetBool("isWalking", true);
+        //}
     }
 
-    public void Die()
+    public void DieAnimation()
     {
-        animation.CrossFade(death);
+        //animation.CrossFade(death);
+        animator.SetLayerWeight(2, 1f);
+        animator.SetTrigger("isDead");
     }
 
-    public void Attack()
+    public void AttackAnimation()
     {
-        animation.CrossFade(attack);
+        //animation.CrossFade(attack);
+        animator.SetLayerWeight(1, 1f);
+        animator.SetTrigger("isAttacking");
     }
 }

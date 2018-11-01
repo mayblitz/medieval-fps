@@ -19,7 +19,7 @@ public class HitDamage : MonoBehaviour, IHittable
     public void Hit(int damage)
     {
         stats.health -= damage;
-
+        print(stats.health);
         if (stats.health <= 0 && !isDead)
         {
             isDead = true;
