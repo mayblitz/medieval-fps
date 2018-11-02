@@ -1877,9 +1877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d236d0f79281c5439f4c5e52f00dbe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outOfReachRange: 10
+  maxTargetRange: 10
+  minTargetRange: 2
   attackRange: 2.25
-  attackDelay: 1
   damage: 10
 --- !u!114 &114921826012299928
 MonoBehaviour:
@@ -1903,10 +1903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791f2f6e73d3d26438d7961c7dccc257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idle: idle
-  walk: walk
-  death: death
-  attack: hpunch
 --- !u!136 &136337525434497370
 CapsuleCollider:
   m_ObjectHideFlags: 1
