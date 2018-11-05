@@ -2,8 +2,7 @@
 
 public class MoveAnimation : MonoBehaviour
 {
-    public CharacterController character;
-
+    CharacterController character;
     Animator animator;
     Vector3 lastPosition;
     float tempTime;
@@ -12,6 +11,7 @@ public class MoveAnimation : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        character = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
         lastPosition = character.transform.position;
     }
 

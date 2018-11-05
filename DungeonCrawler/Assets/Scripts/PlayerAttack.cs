@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Transform attackPoint;
-
+    public float size = 0.5f;
     public int damage = 10;
 
     public void Attack()
     {
-        var hits = Physics.OverlapSphere(attackPoint.position, 0.5f);
+        var hits = Physics.OverlapSphere(attackPoint.position, size);
 
         foreach (var hit in hits)
         {
