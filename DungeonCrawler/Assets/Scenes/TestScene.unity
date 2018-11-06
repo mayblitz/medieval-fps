@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 1389d70495440a8468ed586a74bf2397, type: 2}
---- !u!1001 &318359799
+--- !u!1001 &361786872
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -151,26 +151,6 @@ Prefab:
     - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
-        type: 2}
-      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[1].time
-      value: 0.5166702
-      objectReference: {fileID: 0}
-    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
-        type: 2}
-      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[1].value
-      value: 0.45000076
-      objectReference: {fileID: 0}
-    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
-        type: 2}
-      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[3].value
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
-        type: 2}
-      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[3].time
-      value: 1.4916687
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
@@ -303,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5079d1a1b10d3c458befa9b0094282b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1300611964618398, guid: 0584839bceadb844fa31b1ca352056ba, type: 2}
+  enemy: {fileID: 1578686801676770, guid: 0245a2c76170ead489bf95ae15225d9d, type: 2}
 --- !u!1001 &1183151650
 Prefab:
   m_ObjectHideFlags: 0

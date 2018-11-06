@@ -17,10 +17,11 @@ public class EnemyKill : MonoBehaviour, IKillable
 
     public void Kill()
     {
-        animator.DieAnimation();
+        //animator.DieAnimation();
+        GetComponent<Animator>().enabled = false;
         enemyAI.enabled = false;
-        collider.enabled = false;
-        StartCoroutine(Destroy());
+        //collider.enabled = false;
+        //StartCoroutine(Destroy());
     }
 
     IEnumerator Destroy()
