@@ -6,7 +6,7 @@ public class PlayerLook : MonoBehaviour
     private string mouseXInputName = "Mouse X", mouseYInputName = "Mouse Y";
 
     [SerializeField]
-    private float mouseSensitivity = 100f;
+    private float mouseSensitivity = 150f;
 
     [SerializeField]
     private Transform playerBody;
@@ -19,7 +19,7 @@ public class PlayerLook : MonoBehaviour
         xAxisClamp = 0.0f;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         CameraRotation();
     }

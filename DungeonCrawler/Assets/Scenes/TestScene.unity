@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824505, g: 0.49827188, b: 0.57558143, a: 1}
+  m_IndirectSpecularColor: {r: 0.4482453, g: 0.49827206, b: 0.5755818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,59 +113,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 1389d70495440a8468ed586a74bf2397, type: 2}
---- !u!1001 &728905807
+--- !u!1001 &318359799
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.58962965
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.093
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.9150046
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4783970846452852, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+    - target: {fileID: 4227435402207936, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 4489299975858142, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.332
+    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
+        type: 2}
+      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[1].time
+      value: 0.5166702
       objectReference: {fileID: 0}
-    - target: {fileID: 4489299975858142, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.083000004
+    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
+        type: 2}
+      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[1].value
+      value: 0.45000076
       objectReference: {fileID: 0}
-    - target: {fileID: 4489299975858142, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.699
+    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
+        type: 2}
+      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[3].value
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114978375659004382, guid: 58905c1be1c058042a25219c6f415a30,
+        type: 2}
+      propertyPath: m_HeadBob.Bobcurve.m_Curve.Array.data[3].time
+      value: 1.4916687
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e4ec3c12e8c3452459d1d319d50b3e21, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 58905c1be1c058042a25219c6f415a30, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &978654538
 Prefab:

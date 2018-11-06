@@ -6,7 +6,7 @@ public class ClipCameraFollow : MonoBehaviour
     private string mouseYInputName = "Mouse Y";
 
     [SerializeField]
-    private float mouseSensitivity = 100f;
+    private float mouseSensitivity = 150f;
 
     private float xAxisClamp;
 
@@ -16,7 +16,7 @@ public class ClipCameraFollow : MonoBehaviour
         xAxisClamp = 0.0f;
     }
 
-    void Update()
+    void LateUpdate()
     {
         float mouseY = Input.GetAxis(mouseYInputName) * mouseSensitivity * Time.deltaTime;
 
