@@ -1,47 +1,47 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ClipCameraFollow : MonoBehaviour
 {
-    public Camera mainCamera;
-    public bool clampVerticalRotation = true;
-    public float ySensitivity = 2.5f;
-    private Camera clipCamera;
-    private Quaternion cameraTargetRot;
+    [SerializeField]
+    private string mouseYInputName = "Mouse Y";
 
-    // Use this for initialization
+    [SerializeField]
+    private float mouseSensitivity = 100f;
+
+    private float xAxisClamp;
+
     void Start()
     {
-        clipCamera = GetComponent<Camera>();
-        cameraTargetRot = clipCamera.transform.localRotation;
+        mouseSensitivity = mouseSensitivity * 1.22f;
+        xAxisClamp = 0.0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float xRot = Input.GetAxis("Mouse Y") * ySensitivity;
+        float mouseY = Input.GetAxis(mouseYInputName) * mouseSensitivity * Time.deltaTime;
 
-        cameraTargetRot *= Quaternion.Euler(-xRot, 0f, 0f);
+        xAxisClamp += mouseY;
 
-        cameraTargetRot = ClampRotationAroundXAxis(cameraTargetRot);
+        if (xAxisClamp > 110)
+        {
+            xAxisClamp = 110;
+            mouseY = 0.0f;
+            ClampXAxisRotationToValue(290);
+        }
+        else if (xAxisClamp < -110)
+        {
+            xAxisClamp = -110;
+            mouseY = 0.0f;
+            ClampXAxisRotationToValue(70);
+        }
 
-        clipCamera.transform.localRotation = cameraTargetRot;
+        transform.Rotate(Vector3.left * mouseY);
     }
 
-    Quaternion ClampRotationAroundXAxis(Quaternion q)
+    private void ClampXAxisRotationToValue(float value)
     {
-        q.x /= q.w;
-        q.y /= q.w;
-        q.z /= q.w;
-        q.w = 1.0f;
-
-        float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan(q.x);
-
-        angleX = Mathf.Clamp(angleX, -112.5f, 112.5f);
-
-        q.x = Mathf.Tan(0.5f * Mathf.Deg2Rad * angleX);
-
-        return q;
+        Vector3 eulerRotation = transform.eulerAngles;
+        eulerRotation.x = value;
+        transform.eulerAngles = eulerRotation;
     }
 }
