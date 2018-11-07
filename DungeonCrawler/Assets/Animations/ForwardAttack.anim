@@ -602,7 +602,7 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_Events:
   - time: 0.25
-    functionName: Attack
+    functionName: ForwardAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

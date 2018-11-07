@@ -38,9 +38,9 @@ GameObject:
   - component: {fileID: 23649373325935070}
   - component: {fileID: 64988695888170388}
   - component: {fileID: 95412928605359148}
-  - component: {fileID: 114264940506982570}
-  - component: {fileID: 114010536281331938}
-  - component: {fileID: 114361728134325760}
+  - component: {fileID: 114083417218453008}
+  - component: {fileID: 114255322747415182}
+  - component: {fileID: 114899627337561460}
   m_Layer: 9
   m_Name: Axe
   m_TagString: Untagged
@@ -149,7 +149,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114010536281331938
+--- !u!114 &114083417218453008
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,31 +157,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1816847061895326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead7a34a9ac95a245ba6f53a40769d66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114264940506982570
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1816847061895326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfc46df4c9d31b4458250ad3a87ea0df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114361728134325760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1816847061895326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fdb402bdc665e743b35b5eebac96246, type: 3}
+  m_Script: {fileID: 11500000, guid: d25b3489b383c294ab3661835ea596bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 4372245248688562}
   size: 1
-  damage: 10
+  playerDamage: 20
+--- !u!114 &114255322747415182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816847061895326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460b2d062d4b8104cb27e368d9f1322a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114899627337561460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816847061895326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746740e1d39ba4e41b8914378aa02c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

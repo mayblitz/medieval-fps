@@ -61,7 +61,7 @@ public class EnemyAI : MonoBehaviour
             return;
 
         foreach (IHittable hittable in hittables)
-            hittable.Hit(damage);
+            hittable.Hit(damage, Direction.Forward);
     }
 
     bool IsInRange(float range)

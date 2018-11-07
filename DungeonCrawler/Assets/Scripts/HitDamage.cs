@@ -16,14 +16,15 @@ public class HitDamage : MonoBehaviour, IHittable
             throw new MissingComponentException("Requires implementation of IKillable");
     }
 
-    public void Hit(int damage)
+    public void Hit(int damage, Direction direction)
     {
         stats.health -= damage;
         print(stats.health);
         if (stats.health <= 0 && !isDead)
         {
             isDead = true;
-            killable.Kill();
+            int force = damage / 2;
+            killable.Kill(force, direction);
         }
     }
 }
