@@ -208,11 +208,6 @@ GameObject:
   - component: {fileID: 95053064929079256}
   - component: {fileID: 136452455474711734}
   - component: {fileID: 195170842821901036}
-  - component: {fileID: 114381851594437578}
-  - component: {fileID: 114094172038904462}
-  - component: {fileID: 114977147575615860}
-  - component: {fileID: 114776827623926672}
-  - component: {fileID: 114362665806782122}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -1243,66 +1238,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114094172038904462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611964618398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39fa161e236ac2340a959849871667aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
---- !u!114 &114362665806782122
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611964618398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d236d0f79281c5439f4c5e52f00dbe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxTargetRange: 100
-  minTargetRange: 2
-  attackRange: 2
-  damage: 10
---- !u!114 &114381851594437578
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611964618398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8569b35d9fd43234d955c8926fefa035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114776827623926672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611964618398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791f2f6e73d3d26438d7961c7dccc257, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114977147575615860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611964618398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b6aa49c23c4ac14e9acb3420e441d88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &136452455474711734
 CapsuleCollider:
   m_ObjectHideFlags: 1

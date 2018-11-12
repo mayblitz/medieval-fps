@@ -32,12 +32,12 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            var hittables = hit.GetComponents(typeof(IHittable));
+            var hittables = hit.GetComponents(typeof(IDirectionHittable));
 
             if (hittables == null)
                 return;
 
-            foreach (IHittable hittable in hittables)
+            foreach (IDirectionHittable hittable in hittables)
                 hittable.Hit(damage, direction);
         }
     }

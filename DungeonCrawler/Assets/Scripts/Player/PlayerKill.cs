@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerKill : MonoBehaviour, IKillable
 {
-    public void Kill(int force, Direction direction)
+    public void Kill()
     {
         print("game over");
     }

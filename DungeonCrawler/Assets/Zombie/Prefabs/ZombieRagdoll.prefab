@@ -476,12 +476,11 @@ GameObject:
   - component: {fileID: 95113184052143934}
   - component: {fileID: 136184767711539586}
   - component: {fileID: 195604715055110850}
+  - component: {fileID: 114366448325901804}
+  - component: {fileID: 114855459953814454}
   - component: {fileID: 114432020585006598}
   - component: {fileID: 114929408396605618}
-  - component: {fileID: 114366448325901804}
   - component: {fileID: 114435374173000514}
-  - component: {fileID: 114540864064905288}
-  - component: {fileID: 114855459953814454}
   m_Layer: 0
   m_Name: ZombieRagdoll
   m_TagString: Untagged
@@ -1502,17 +1501,6 @@ MonoBehaviour:
   minTargetRange: 2
   attackRange: 2
   damage: 10
---- !u!114 &114540864064905288
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1578686801676770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e949d2ddc2859494eaadd2f962e03302, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114855459953814454
 MonoBehaviour:
   m_ObjectHideFlags: 1

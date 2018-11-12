@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(EnemyAnimator))]
-public class EnemyKill : MonoBehaviour, IKillable
+public class EnemyKill : MonoBehaviour, IDirectionKillable
 {
     EnemyAI enemyAI;
     EnemyAnimator animator;
     Rigidbody[] rigidbodies;
+    Transform player;
 
     void Start()
     {
@@ -13,6 +14,7 @@ public class EnemyKill : MonoBehaviour, IKillable
         enemyAI = GetComponent<EnemyAI>();
         animator = GetComponent<EnemyAnimator>();
         rigidbodies = GetComponentsInChildren<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         DisableRagdoll();
     }
 
@@ -22,8 +24,7 @@ public class EnemyKill : MonoBehaviour, IKillable
         enemyAI.enabled = false;
 
         EnableRagdoll();
-        var player = GameObject.FindGameObjectWithTag("Player").transform;
-
+ 
         Vector3 vectorForce;
 
         if (direction == Direction.Backward)

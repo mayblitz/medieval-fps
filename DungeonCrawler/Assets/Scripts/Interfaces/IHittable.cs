@@ -1,4 +1,4 @@
-﻿public interface IHittable
+﻿public interface IHittable 
 {
-    void Hit(int damage, Direction direction);
+    void Hit(int damage);
 }

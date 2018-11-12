@@ -38,7 +38,6 @@ public class EnemyAI : MonoBehaviour
         }
         else if (Vector3.Distance(transform.position, player.transform.position) > maxTargetRange)
         {
-            print("stopped");
             animator.IdleAnimation();
             navMesh.isStopped = true;
         }
@@ -61,7 +60,7 @@ public class EnemyAI : MonoBehaviour
             return;
 
         foreach (IHittable hittable in hittables)
-            hittable.Hit(damage, Direction.Forward);
+            hittable.Hit(damage);
     }
 
     bool IsInRange(float range)
