@@ -20,9 +20,7 @@ public class AttackAnimation : MonoBehaviour
                 isCharging = true;
                 animator.SetLayerWeight(1, 1f);
 
-                if (Input.GetKey(KeyCode.W))
-                    animator.SetTrigger("ChargeForwardAttack");
-                else if (Input.GetKey(KeyCode.S))
+                if (Input.GetKey(KeyCode.S))
                     animator.SetTrigger("ChargeBackAttack");
                 else if (Input.GetKey(KeyCode.A))
                     animator.SetTrigger("ChargeLeftAttack");
