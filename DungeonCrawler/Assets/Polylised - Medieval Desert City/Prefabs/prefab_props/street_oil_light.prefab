@@ -112,7 +112,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4145467918966126
 Transform:
@@ -121,14 +121,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1426769608828836}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 3.33, y: 0, z: 11.71}
+  m_LocalPosition: {x: -36.76284, y: 0, z: 8.256806}
   m_LocalScale: {x: 1.6605994, y: 2.0222461, z: 1.27441}
   m_Children:
   - {fileID: 4598266433272154}
   - {fileID: 4912271550124792}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 55.799004}
 --- !u!4 &4190193742076794
 Transform:
   m_ObjectHideFlags: 1
@@ -268,7 +268,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.6856303, b: 0.10588235, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -311,8 +311,8 @@ MonoBehaviour:
   BaseFlame: {fileID: 1527131152344376}
   Etincelles: {fileID: 1483877937909236}
   Fumee: {fileID: 1501066894110618}
-  MaxLightIntensity: 10
-  IntensityLight: 5
+  MaxLightIntensity: 5
+  IntensityLight: 2.5
   Range: 5
 --- !u!198 &198065791785836480
 ParticleSystem:
