@@ -4,7 +4,7 @@
 public class EnemyKill : MonoBehaviour, IDirectionKillable
 {
     EnemyAI enemyAI;
-    EnemyAnimator animator;
+    //EnemyAnimator animator;
     Rigidbody[] rigidbodies;
     Transform player;
 
@@ -12,7 +12,7 @@ public class EnemyKill : MonoBehaviour, IDirectionKillable
     {
 
         enemyAI = GetComponent<EnemyAI>();
-        animator = GetComponent<EnemyAnimator>();
+        //animator = GetComponent<EnemyAnimator>();
         rigidbodies = GetComponentsInChildren<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         DisableRagdoll();
