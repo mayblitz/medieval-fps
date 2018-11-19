@@ -37,8 +37,13 @@ public class EnemyKill : MonoBehaviour, IDirectionKillable
             vectorForce = -transform.up;
 
         foreach (Rigidbody rb in rigidbodies)
+        {
             rb.AddForce(vectorForce * force, ForceMode.Impulse);
+            rb.mass = 0.5f;
+            rb.gameObject.layer = LayerMask.NameToLayer("Dead");
+        }
 
+        this.gameObject.layer = LayerMask.NameToLayer("Dead");
         Destroy(gameObject, 60);
     }
 
