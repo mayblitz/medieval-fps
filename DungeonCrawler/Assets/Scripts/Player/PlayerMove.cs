@@ -24,18 +24,14 @@ public class PlayerMove : MonoBehaviour
 
     private CharacterController charController;
 
-    public bool IsEnabled { get; set; }
-
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
-        IsEnabled = true;
     }
 
     private void Update()
     {
-        if (IsEnabled)
-            PlayerMovement();
+        PlayerMovement();
     }
 
     private void PlayerMovement()

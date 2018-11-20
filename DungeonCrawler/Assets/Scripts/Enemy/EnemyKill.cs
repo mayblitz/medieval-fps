@@ -3,16 +3,11 @@
 [RequireComponent(typeof(EnemyAnimator))]
 public class EnemyKill : MonoBehaviour, IDirectionKillable
 {
-    EnemyAI enemyAI;
-    //EnemyAnimator animator;
     Rigidbody[] rigidbodies;
     Transform player;
 
     void Start()
     {
-
-        enemyAI = GetComponent<EnemyAI>();
-        //animator = GetComponent<EnemyAnimator>();
         rigidbodies = GetComponentsInChildren<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         DisableRagdoll();
@@ -20,8 +15,9 @@ public class EnemyKill : MonoBehaviour, IDirectionKillable
 
     public void Kill(int force, Direction direction)
     {
+        GetComponent<CapsuleCollider>().enabled = false;
         GetComponent<Animator>().enabled = false;
-        enemyAI.enabled = false;
+        GetComponent<EnemyAI>().enabled = false;
 
         EnableRagdoll();
  

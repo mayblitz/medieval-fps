@@ -162,7 +162,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1573858117740238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.25, z: 1.565}
+  m_LocalPosition: {x: 0, y: -1.3, z: 1.8}
   m_LocalScale: {x: 0.5470177, y: 0.5496743, z: 0.53632665}
   m_Children: []
   m_Father: {fileID: 4145467918966126}
@@ -273,7 +273,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -311,8 +311,8 @@ MonoBehaviour:
   BaseFlame: {fileID: 1527131152344376}
   Etincelles: {fileID: 1483877937909236}
   Fumee: {fileID: 1501066894110618}
-  MaxLightIntensity: 5
-  IntensityLight: 2.5
+  MaxLightIntensity: 4
+  IntensityLight: 2
   Range: 5
 --- !u!198 &198065791785836480
 ParticleSystem:
