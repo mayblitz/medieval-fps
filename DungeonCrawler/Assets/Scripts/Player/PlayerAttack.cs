@@ -2,9 +2,22 @@
 
 public class PlayerAttack : MonoBehaviour
 {
-    public Transform attackPoint;
+    public Transform attackPointTip;
+    public Transform attackPointBase;
     public float size = 0.5f;
     public int playerDamage = 10;
+
+    private AttackSounds attackSounds;
+    private int layerMask;
+
+    private void Start()
+    {
+        attackSounds = GetComponent<AttackSounds>();
+
+        int building = LayerMask.NameToLayer("Building");
+        int enemy = LayerMask.NameToLayer("Enemy");
+        layerMask = (1 << building) | (1 << enemy);
+    }
 
     public void ForwardAttack()
     {
@@ -28,17 +41,20 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack(int damage, Direction direction)
     {
-        var hits = Physics.OverlapSphere(attackPoint.position, size);
+        var hits = Physics.OverlapCapsule(attackPointTip.position, attackPointBase.position, size, layerMask);
 
         foreach (var hit in hits)
         {
-            var hittables = hit.GetComponents(typeof(IDirectionHittable));
+            print(hit.tag);
+            attackSounds.PlayImpactSound(hit.tag);
 
-            if (hittables == null)
-                return;
+            var directionHittables = hit.GetComponents(typeof(IDirectionHittable));
 
-            foreach (IDirectionHittable hittable in hittables)
-                hittable.Hit(damage, direction);
+            if (directionHittables != null)
+            {
+                foreach (IDirectionHittable hittable in directionHittables)
+                    hittable.Hit(damage, direction);
+            }   
         }
     }
 }

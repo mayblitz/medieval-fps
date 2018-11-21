@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33965473245285780}
   - component: {fileID: 23132186779178634}
   - component: {fileID: 64481320087686976}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: dead_tree_d
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

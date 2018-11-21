@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4909562077443136}
   - component: {fileID: 33873587629834610}
   - component: {fileID: 23893521907527218}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: overhang_building_a
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4909562077443136
 Transform:

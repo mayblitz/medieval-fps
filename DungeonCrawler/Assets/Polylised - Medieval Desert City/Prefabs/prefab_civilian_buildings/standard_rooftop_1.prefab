@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4450935518965028}
   - component: {fileID: 33897616119687746}
   - component: {fileID: 23796091697847122}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: standard_rooftop_1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

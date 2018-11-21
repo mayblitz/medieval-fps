@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4804265717312600}
   - component: {fileID: 33807758339563242}
   - component: {fileID: 23751955824949714}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: citadel_wall_incline
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4804265717312600
 Transform:

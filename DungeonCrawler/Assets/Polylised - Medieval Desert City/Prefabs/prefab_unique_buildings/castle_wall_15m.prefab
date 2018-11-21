@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4501903411537258}
   - component: {fileID: 33789225918333010}
   - component: {fileID: 23574638431817962}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: castle_wall_15m
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4501903411537258
 Transform:

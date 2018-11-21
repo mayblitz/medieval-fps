@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33170388806033746}
   - component: {fileID: 23545861700653854}
   - component: {fileID: 64585197638984386}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: box
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295

@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4500708484156418}
   - component: {fileID: 33000588355589284}
   - component: {fileID: 23096106392182170}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: roof_building_6_a
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

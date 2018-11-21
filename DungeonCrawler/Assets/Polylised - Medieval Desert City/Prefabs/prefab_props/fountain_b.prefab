@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4249239942434568}
   - component: {fileID: 33145545989964618}
   - component: {fileID: 23033597759146372}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: fountain_b
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4493555136178226}
   - component: {fileID: 33754195552197166}
   - component: {fileID: 23504846182813310}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: standard_wooden_roof_1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

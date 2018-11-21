@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4491705336711538}
   - component: {fileID: 198637996077347564}
   - component: {fileID: 199004019842669758}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: flam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,9 +40,9 @@ GameObject:
   - component: {fileID: 23945452325930938}
   - component: {fileID: 114727163644982242}
   - component: {fileID: 64656530408836062}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: fire_cage
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4510747166191938}
   - component: {fileID: 198488978969575696}
   - component: {fileID: 199316821820058716}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: base_flam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 4561311765525290}
   - component: {fileID: 198785630886359518}
   - component: {fileID: 199860407662117460}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: fumee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4852117331942614}
   - component: {fileID: 108971297495813578}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Torch_light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 4703165156613108}
   - component: {fileID: 198063840554621104}
   - component: {fileID: 199272541495813640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: etincelles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,6 +308,7 @@ MonoBehaviour:
   Fumee: {fileID: 1331516265051234}
   MaxLightIntensity: 3
   IntensityLight: 1.5
+  Range: 0
 --- !u!198 &198063840554621104
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4030265937643786}
   - component: {fileID: 33982056266006100}
   - component: {fileID: 23371893628177398}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: stone_stairs_1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

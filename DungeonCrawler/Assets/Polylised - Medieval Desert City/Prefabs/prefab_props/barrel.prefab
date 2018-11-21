@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33250583044069864}
   - component: {fileID: 23264534110584056}
   - component: {fileID: 64654918678445548}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: barrel
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33068830982041894}
   - component: {fileID: 23436056174255976}
   - component: {fileID: 64503856851436502}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: sentinel_tower_b
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4324213081175612}
   - component: {fileID: 33873992269839554}
   - component: {fileID: 23272190874922610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: castle_wall_incline_lower
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4324213081175612
 Transform:

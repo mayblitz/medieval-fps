@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Flesh
+  - Metal
+  - Stone
+  - Wood
+  - Sand
   layers:
   - Default
   - TransparentFX
@@ -14,10 +19,10 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - Equipped
   - Dead
   - Player
-  - 
+  - Building
+  - Enemy
   - 
   - 
   - 

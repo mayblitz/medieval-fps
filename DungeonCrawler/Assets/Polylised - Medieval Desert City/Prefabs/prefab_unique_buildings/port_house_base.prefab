@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4797258541757498}
   - component: {fileID: 33604169381284726}
   - component: {fileID: 23667079587319324}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: port_house_base
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4797258541757498
 Transform:

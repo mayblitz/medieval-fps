@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4234575741816972}
   - component: {fileID: 33909946988835482}
   - component: {fileID: 23064202776715622}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: civilian_bridge_1_c
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

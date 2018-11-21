@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4878502335556674}
   - component: {fileID: 33552088729192338}
   - component: {fileID: 23163032059102576}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: citadel_tower_corner
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4878502335556674
 Transform:

@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4035097881536878}
   - component: {fileID: 33605693719050322}
   - component: {fileID: 23956296564272190}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: boat_01
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

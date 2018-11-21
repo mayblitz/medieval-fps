@@ -19,7 +19,7 @@ public class EnemyHitDamage : MonoBehaviour, IDirectionHittable
     public void Hit(int damage, Direction direction)
     {
         stats.health -= damage;
-        print(stats.health);
+
         if (stats.health <= 0 && !isDead)
         {
             isDead = true;

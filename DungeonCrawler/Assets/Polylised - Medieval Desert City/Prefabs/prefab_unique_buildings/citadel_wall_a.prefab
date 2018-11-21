@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33835168637786416}
   - component: {fileID: 23444894064246960}
   - component: {fileID: 64406261568671894}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: citadel_wall_a
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

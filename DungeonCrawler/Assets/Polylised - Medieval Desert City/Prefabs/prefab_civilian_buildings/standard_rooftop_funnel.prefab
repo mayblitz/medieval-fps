@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4351013614597416}
   - component: {fileID: 33972638487650996}
   - component: {fileID: 23466765409893094}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: standard_rooftop_funnel
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4014297374577190}
   - component: {fileID: 33047877146833896}
   - component: {fileID: 23610805731357980}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: civilian_house_40_f
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

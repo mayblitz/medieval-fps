@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33962418224970176}
   - component: {fileID: 23048672486944254}
   - component: {fileID: 64719651463415470}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: building_base_b
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295

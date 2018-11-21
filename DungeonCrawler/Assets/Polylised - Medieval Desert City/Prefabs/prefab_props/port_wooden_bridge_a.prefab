@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4946449613594062}
   - component: {fileID: 33987286151145960}
   - component: {fileID: 23267096313164168}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: port_wooden_bridge_a
   m_TagString: Untagged
   m_Icon: {fileID: 0}

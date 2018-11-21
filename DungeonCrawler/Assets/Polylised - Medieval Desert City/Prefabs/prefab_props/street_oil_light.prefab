@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4912271550124792}
   - component: {fileID: 198349164221325366}
   - component: {fileID: 199879286624848314}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: flam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,9 +40,9 @@ GameObject:
   - component: {fileID: 23455203216187250}
   - component: {fileID: 114158505262450840}
   - component: {fileID: 64229043625026492}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: street_oil_light
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4915150090924150}
   - component: {fileID: 198065791785836480}
   - component: {fileID: 199495433710486412}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: etincelles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 4425296836623894}
   - component: {fileID: 198409024076692610}
   - component: {fileID: 199222394808393462}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: fumee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 4190193742076794}
   - component: {fileID: 198204182984173106}
   - component: {fileID: 199155871888476648}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: base_flam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4598266433272154}
   - component: {fileID: 108820380510690544}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Torch_light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
