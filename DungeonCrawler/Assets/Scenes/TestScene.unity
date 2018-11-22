@@ -628,14 +628,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
         type: 2}
-      propertyPath: stoneHit
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
-        type: 2}
       propertyPath: fleshHit
       value: 
       objectReference: {fileID: 8300000, guid: dbf6b365dd2dcf44c9066e5401955e47, type: 3}
+    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
+        type: 2}
+      propertyPath: stoneHit
+      value: 
+      objectReference: {fileID: 8300000, guid: a8daa998e075a94418b49a4c0eaba959, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d64606066499bf342b351c01b3292fd9, type: 2}
   m_IsPrefabAsset: 0

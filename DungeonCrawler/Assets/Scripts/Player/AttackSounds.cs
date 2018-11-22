@@ -23,26 +23,22 @@ public class AttackSounds : MonoBehaviour
 
     public void ForwardAttackSound()
     {
-        audio.clip = forwardSlash;
-        audio.Play();
+        audio.PlayOneShot(forwardSlash);
     }
 
     public void BackwardAttackSound()
     {
-        audio.clip = backwardSlash;
-        audio.Play();
+        audio.PlayOneShot(backwardSlash);
     }
 
     public void LeftAttackSound()
     {
-        audio.clip = leftSlash;
-        audio.Play();
+        audio.PlayOneShot(leftSlash);
     }
 
     public void RightAttackSound()
     {
-        audio.clip = rightSlash;
-        audio.Play();
+        audio.PlayOneShot(rightSlash);
     }
 
     public void PlayImpactSound(string tag)
@@ -50,24 +46,19 @@ public class AttackSounds : MonoBehaviour
         switch(tag)
         {
             case "Flesh":
-                audio.clip = fleshHit;
-                audio.Play(); ;
+                audio.PlayOneShot(fleshHit);
                 break;
             case "Metal":
-                audio.clip = metalHit;
-                audio.Play();
+                audio.PlayOneShot(metalHit);
                 break;
             case "Stone":
-                audio.clip = stoneHit;
-                audio.Play();
+                audio.PlayOneShot(stoneHit);
                 break;
             case "Wood":
-                audio.clip = woodHit;
-                audio.Play();
+                audio.PlayOneShot(woodHit);
                 break;
             case "Sand":
-                audio.clip = sandHit;
-                audio.Play();
+                audio.PlayOneShot(sandHit);
                 break;
         }
     }

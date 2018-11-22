@@ -45,7 +45,6 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            print(hit.tag);
             attackSounds.PlayImpactSound(hit.tag);
 
             var directionHittables = hit.GetComponents(typeof(IDirectionHittable));
