@@ -52,8 +52,7 @@ public class PlayerMove : MonoBehaviour
         Vector3 jumpMovement = transform.up * verticalVelocity;
         Vector3 forwardMovement = transform.forward * vertInput;
         Vector3 rightMovement = transform.right * horizInput;
-        Vector3 moveVector = forwardMovement + rightMovement + jumpMovement;
-
-        charController.Move(moveVector * Time.deltaTime);
+        Vector3 velocity = forwardMovement + rightMovement + jumpMovement;
+        charController.Move(velocity * Time.deltaTime);
     }
 }

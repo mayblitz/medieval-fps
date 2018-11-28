@@ -311,9 +311,9 @@ MonoBehaviour:
   BaseFlame: {fileID: 1527131152344376}
   Etincelles: {fileID: 1483877937909236}
   Fumee: {fileID: 1501066894110618}
-  MaxLightIntensity: 4
-  IntensityLight: 2
-  Range: 5
+  MaxLightIntensity: 6
+  IntensityLight: 3
+  Range: 6
 --- !u!198 &198065791785836480
 ParticleSystem:
   m_ObjectHideFlags: 1

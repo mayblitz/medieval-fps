@@ -58,6 +58,8 @@ GameObject:
   - component: {fileID: 114291191839339938}
   - component: {fileID: 114492055560777358}
   - component: {fileID: 114520459346796344}
+  - component: {fileID: 82698143427741176}
+  - component: {fileID: 114707723164747796}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -347,6 +349,101 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1037704294677738}
   m_Enabled: 1
+--- !u!82 &82698143427741176
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649577643697098}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &82774352015679778
 AudioSource:
   m_ObjectHideFlags: 1
@@ -559,6 +656,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 20635996987943358}
+--- !u!114 &114707723164747796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649577643697098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45fcc57d027bb6441bbdc5d758cfc79a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sandSteps:
+  - {fileID: 8300000, guid: b9c8abf653073854eb1e221fc79027d8, type: 3}
+  - {fileID: 8300000, guid: 856d81252163b1e478f3ddcda295c45b, type: 3}
+  - {fileID: 8300000, guid: 9eff76f1333a79747a9e61c13c4a7cc6, type: 3}
+  - {fileID: 8300000, guid: e7d0fbc94fde24d43b8a4fa9ab1a30a8, type: 3}
+  stoneSteps:
+  - {fileID: 8300000, guid: b6c5e70a80bf0594c84267cf7fb0f5a9, type: 3}
+  - {fileID: 8300000, guid: 0c90f89ee4bc7a344b2ebe774f9cd5f3, type: 3}
+  - {fileID: 8300000, guid: 23434cda978d8394e964a65f48a081bb, type: 3}
+  - {fileID: 8300000, guid: d22187ad1144a914187f2f6c79276a44, type: 3}
 --- !u!114 &114735539645768478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -602,9 +720,9 @@ MonoBehaviour:
   backwardSlash: {fileID: 8300000, guid: 12936109dc231194da8ce8670cdfa7ce, type: 3}
   leftSlash: {fileID: 8300000, guid: 0ad838745f2368c4daf7c99e0cd7043c, type: 3}
   rightSlash: {fileID: 8300000, guid: 724c6c5f8b2a74a488578f8b6351a9dc, type: 3}
-  fleshHit: {fileID: 0}
+  fleshHit: {fileID: 8300000, guid: dbf6b365dd2dcf44c9066e5401955e47, type: 3}
   metalHit: {fileID: 0}
-  stoneHit: {fileID: 0}
+  stoneHit: {fileID: 8300000, guid: a8daa998e075a94418b49a4c0eaba959, type: 3}
   woodHit: {fileID: 0}
   sandHit: {fileID: 0}
 --- !u!143 &143388380642859570
@@ -620,7 +738,7 @@ CharacterController:
   m_Height: 1.8
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.6
+  m_StepOffset: 0.4
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}

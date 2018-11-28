@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 2
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 493bfb50af5d9424da505ba945c86600, type: 2}
@@ -75,8 +75,8 @@ LightmapSettings:
     m_MixedBakeMode: 2
     m_BakeBackend: 1
     m_PVRSampling: 1
-    m_PVRDirectSampleCount: 16
-    m_PVRSampleCount: 100
+    m_PVRDirectSampleCount: 8
+    m_PVRSampleCount: 50
     m_PVRBounces: 1
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
@@ -626,16 +626,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
-        type: 2}
-      propertyPath: fleshHit
-      value: 
-      objectReference: {fileID: 8300000, guid: dbf6b365dd2dcf44c9066e5401955e47, type: 3}
-    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
-        type: 2}
-      propertyPath: stoneHit
-      value: 
-      objectReference: {fileID: 8300000, guid: a8daa998e075a94418b49a4c0eaba959, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d64606066499bf342b351c01b3292fd9, type: 2}
   m_IsPrefabAsset: 0
@@ -5614,7 +5604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1170226579
 Transform:
   m_ObjectHideFlags: 0
