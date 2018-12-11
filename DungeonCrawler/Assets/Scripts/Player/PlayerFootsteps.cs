@@ -33,7 +33,7 @@ public class PlayerFootsteps : MonoBehaviour
             Physics.Raycast(transform.position, -Vector3.up, out hit, Mathf.Infinity, layerMask))
         {       
             AudioClip clip;
-            print("step");
+
             if (hit.collider.tag == "Stone")
             {
                 int i = Random.Range(0, stoneSteps.Length);

@@ -594,6 +594,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
+        type: 2}
+      propertyPath: fleshHits.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4217414814276392, guid: d64606066499bf342b351c01b3292fd9, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -626,6 +631,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
+        type: 2}
+      propertyPath: fleshHits.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bff42b9bc2c91d44984277a566ff70c, type: 3}
+    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
+        type: 2}
+      propertyPath: fleshHits.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 01bfc1ba3a5cf5b4bb6ba70b4e255858, type: 3}
+    - target: {fileID: 114989702221032862, guid: d64606066499bf342b351c01b3292fd9,
+        type: 2}
+      propertyPath: fleshHits.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: dbf6b365dd2dcf44c9066e5401955e47, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d64606066499bf342b351c01b3292fd9, type: 2}
   m_IsPrefabAsset: 0
@@ -5604,7 +5624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1170226579
 Transform:
   m_ObjectHideFlags: 0
