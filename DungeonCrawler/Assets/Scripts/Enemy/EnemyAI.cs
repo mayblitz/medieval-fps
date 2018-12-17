@@ -13,6 +13,8 @@ public class EnemyAI : MonoBehaviour
     GameObject player;
     NavMeshAgent navMesh;
     EnemyAnimator animator;
+    Vector3 wanderDestination;
+    int layerMask;
 
     void OnDisable()
     {
@@ -24,38 +26,40 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         navMesh = GetComponent<NavMeshAgent>();
         animator = GetComponent<EnemyAnimator>();
+        wanderDestination = transform.position;
+        layerMask = 1 << LayerMask.NameToLayer("Building");
     }
 
     void Update()
     {
-        if (IsInRange(attackRange))
+        if (IsInRange(attackRange, player.transform.position))
         {
             LookAt();
             animator.AttackAnimation();
             animator.IdleAnimation();
-            if (IsInRange(minTargetRange))
+            if (IsInRange(minTargetRange, player.transform.position))
                 navMesh.isStopped = true;
         }
-        else if (Vector3.Distance(transform.position, player.transform.position) > maxTargetRange)
-        {
-            animator.IdleAnimation();
-            navMesh.isStopped = true;
-        }
+        //else if (IsOutOfRange(maxTargetRange, player.transform.position))
+        //{
+        //    if (IsInRange(3f, wanderDestination))
+        //    {
+        //        Idle();
+        //        SetWanderDestination();
+        //    }
+        //    else
+        //        MoveTo(wanderDestination);
+        //}
         else 
-        {
-            animator.WalkAnimation();
-            navMesh.isStopped = false;
-            navMesh.SetDestination(player.transform.position);
-        }
+            MoveTo(player.transform.position);
     }
 
     public void Attack()
     {
-        if (!IsInRange(attackRange))
+        if (!IsInRange(attackRange, player.transform.position))
             return;
 
         var hittables = player.GetComponents(typeof(IHittable));
-
         if (hittables == null)
             return;
 
@@ -63,9 +67,14 @@ public class EnemyAI : MonoBehaviour
             hittable.Hit(damage);
     }
 
-    bool IsInRange(float range)
+    bool IsInRange(float range, Vector3 target)
     {
-        return Vector3.Distance(transform.position, player.transform.position) < range;
+        return Vector3.Distance(transform.position, target) < range;
+    }
+
+    bool IsOutOfRange(float range, Vector3 target)
+    {
+        return Vector3.Distance(transform.position, target) > range;
     }
 
     void LookAt()
@@ -74,5 +83,37 @@ public class EnemyAI : MonoBehaviour
         lookPos.y = 0;
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 50f);
+    }
+
+    void SetWanderDestination()
+    {
+        float x = Random.Range((int)transform.position.x - 30, (int)transform.position.x + 30);
+        float z = Random.Range((int)transform.position.z - 30, (int)transform.position.z + 30);
+        Vector3 destination = new Vector3(x, 0, z);
+        Collider[] colliders = Physics.OverlapSphere(destination, 5, layerMask);   
+        foreach (var collider in colliders)
+        {
+            if (collider.bounds.Contains(destination))
+            {
+                Debug.DrawLine(destination, new Vector3(destination.x, 20, destination.z), Color.red, 60 * 1000 * 30);
+                return;
+            }
+        }
+
+        Debug.DrawLine(destination, new Vector3(destination.x, 20, destination.z), Color.green, 60 * 1000 * 30);
+        wanderDestination = destination;
+    }
+
+    void MoveTo(Vector3 destination)
+    {
+        animator.WalkAnimation();
+        navMesh.isStopped = false;
+        navMesh.SetDestination(destination);
+    }
+
+    void Idle()
+    {
+        animator.IdleAnimation();
+        navMesh.isStopped = true;
     }
 }

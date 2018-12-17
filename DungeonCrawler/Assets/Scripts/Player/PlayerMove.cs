@@ -36,8 +36,8 @@ public class PlayerMove : MonoBehaviour
 
     private void PlayerMovement()
     {
-        float horizInput = Input.GetAxis(horizontalInputName) * movementSpeed;
-        float vertInput = Input.GetAxis(verticalInputName) * movementSpeed;
+        float h = Input.GetAxis(horizontalInputName);
+        float v = Input.GetAxis(verticalInputName);
 
         if (charController.isGrounded)
         {
@@ -50,9 +50,9 @@ public class PlayerMove : MonoBehaviour
             verticalVelocity -= gravity * Time.deltaTime;
 
         Vector3 jumpMovement = transform.up * verticalVelocity;
-        Vector3 forwardMovement = transform.forward * vertInput;
-        Vector3 rightMovement = transform.right * horizInput;
-        Vector3 velocity = forwardMovement + rightMovement + jumpMovement;
+        Vector3 dirMovement = (transform.forward * v) + (transform.right * h);
+        dirMovement = Vector3.ClampMagnitude(dirMovement, 1);
+        Vector3 velocity = dirMovement * movementSpeed + jumpMovement;
         charController.Move(velocity * Time.deltaTime);
     }
 }

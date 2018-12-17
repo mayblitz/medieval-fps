@@ -18,7 +18,8 @@ public class PlayerFootsteps : MonoBehaviour
         audio = GetComponent<AudioSource>();
         character = GetComponent<CharacterController>();
         int building = LayerMask.NameToLayer("Building");
-        layerMask = 1 << building;
+        int ground = LayerMask.NameToLayer("Ground");
+        layerMask = (1 << building) | (1 << ground);
 
         InvokeRepeating("PlayFootsteps", 0.1f, 0.5f);
     }
