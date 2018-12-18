@@ -3,14 +3,14 @@
 [RequireComponent(typeof(Stats))]
 public class EnemyHitDamage : MonoBehaviour, IDirectionHittable
 {
-    Stats stats;
-    IDirectionKillable killable;
-
-    bool isDead = false;
+    private Stats stats;
+    private IDirectionKillable killable;
+    bool isDead;
 
     void Start()
     {
         stats = GetComponent<Stats>();
+        isDead = false;
         killable = (IDirectionKillable)GetComponent(typeof(IDirectionKillable));
         if (killable == null)
             throw new MissingComponentException("Requires implementation of IDirectionKillable");

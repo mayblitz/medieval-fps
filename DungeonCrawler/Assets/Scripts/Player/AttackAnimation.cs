@@ -2,12 +2,13 @@
 
 public class AttackAnimation : MonoBehaviour
 {
-    Animator animator;
-    bool isCharging = false;
+    private Animator animator;
+    private bool isCharging;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        isCharging = false;
     }
 
     void Update()

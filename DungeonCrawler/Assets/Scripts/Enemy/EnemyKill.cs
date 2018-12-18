@@ -3,8 +3,8 @@
 [RequireComponent(typeof(EnemyAnimator))]
 public class EnemyKill : MonoBehaviour, IDirectionKillable
 {
-    Rigidbody[] rigidbodies;
-    Transform player;
+    private Rigidbody[] rigidbodies;
+    private Transform player;
 
     void Start()
     {

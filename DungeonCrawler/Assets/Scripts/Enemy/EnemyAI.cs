@@ -5,10 +5,17 @@ using UnityEngine.AI;
 [RequireComponent(typeof(EnemyAnimator))]
 public class EnemyAI : MonoBehaviour
 {
-    public float maxTargetRange = 10f;
-    public float minTargetRange = 2.0f;
-    public float attackRange = 2.5f;
-    public int damage = 10;
+    [SerializeField]
+    private float maxTargetRange = 10f;
+
+    [SerializeField]
+    private float minTargetRange = 2.0f;
+
+    [SerializeField]
+    private float attackRange = 2.5f;
+
+    [SerializeField]
+    private int damage = 10;
 
     GameObject player;
     NavMeshAgent navMesh;

@@ -3,14 +3,14 @@
 [RequireComponent(typeof(Stats))]
 public class PlayerHitDamage : MonoBehaviour, IHittable
 {
-    Stats stats;
-    IKillable killable;
-
-    bool isDead = false;
+    private Stats stats;
+    private IKillable killable;
+    private bool isDead;
 
     void Start()
     {
         stats = GetComponent<Stats>();
+        isDead = false;
         killable = (IKillable)GetComponent(typeof(IKillable));
         if (killable == null)
             throw new MissingComponentException("Requires implementation of IKillable");

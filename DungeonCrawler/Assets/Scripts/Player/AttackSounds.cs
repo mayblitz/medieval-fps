@@ -3,18 +3,34 @@
 [RequireComponent(typeof(AudioSource))]
 public class AttackSounds : MonoBehaviour
 {
-    public AudioClip forwardSlash;
-    public AudioClip backwardSlash;
-    public AudioClip leftSlash;
-    public AudioClip rightSlash;
+    [SerializeField]
+    private AudioClip forwardSlash;
 
-    public AudioClip[] fleshHits;
-    public AudioClip[] metalHits;
-    public AudioClip[] stoneHits;
-    public AudioClip[] woodHits;
-    public AudioClip[] sandHits;
+    [SerializeField]
+    private AudioClip backwardSlash;
 
-    AudioSource audio;
+    [SerializeField]
+    private AudioClip leftSlash;
+
+    [SerializeField]
+    private AudioClip rightSlash;
+
+    [SerializeField]
+    private AudioClip[] fleshHits;
+
+    [SerializeField]
+    private AudioClip[] metalHits;
+
+    [SerializeField]
+    private AudioClip[] stoneHits;
+
+    [SerializeField]
+    private AudioClip[] woodHits;
+
+    [SerializeField]
+    private AudioClip[] sandHits;
+
+    private AudioSource audio;
 
     void Start()
     {

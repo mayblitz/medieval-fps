@@ -2,7 +2,7 @@
 
 public class EnemyAnimator : MonoBehaviour
 {
-    Animator animator;
+    private Animator animator;
 
     private void Start()
     {

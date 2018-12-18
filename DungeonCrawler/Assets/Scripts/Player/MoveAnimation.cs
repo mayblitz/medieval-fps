@@ -2,10 +2,10 @@
 
 public class MoveAnimation : MonoBehaviour
 {
-    CharacterController character;
-    Animator animator;
-    Vector3 lastPosition;
-    float tempTime;
+    private CharacterController character;
+    private Animator animator;
+    private Vector3 lastPosition;
+    private float tempTime;
 
     // Use this for initialization
     void Start()

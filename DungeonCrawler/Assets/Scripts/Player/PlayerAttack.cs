@@ -2,10 +2,17 @@
 
 public class PlayerAttack : MonoBehaviour
 {
-    public Transform attackPointTip;
-    public Transform attackPointBase;
-    public float size = 0.5f;
-    public int playerDamage = 10;
+    [SerializeField]
+    private Transform attackPointTip;
+
+    [SerializeField]
+    private Transform attackPointBase;
+
+    [SerializeField]
+    private float size = 0.5f;
+
+    [SerializeField]
+    private int playerDamage = 10;
 
     private AttackSounds attackSounds;
     private int layerMask;

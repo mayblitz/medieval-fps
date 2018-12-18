@@ -6,6 +6,7 @@ public class PlayerKill : MonoBehaviour, IKillable
 {
     public void Kill()
     {
-        print("game over");
+        print("DEAD");
+        Application.Quit();
     }
 }
