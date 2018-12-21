@@ -1,12 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerKill : MonoBehaviour, IKillable
 {
+    public bool IsDead { get; private set; }
+
     public void Kill()
     {
-        print("DEAD");
-        Application.Quit();
+        IsDead = true;
+        SceneManager.LoadScene("GameOver");
     }
 }

@@ -735,6 +735,11 @@ Prefab:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 1741c8c1df7dc434bb68dae98ed88722, type: 2}
+    - target: {fileID: 114520459346796344, guid: d64606066499bf342b351c01b3292fd9,
+        type: 2}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d64606066499bf342b351c01b3292fd9, type: 2}
   m_IsPrefabAsset: 0

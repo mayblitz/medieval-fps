@@ -15,18 +15,14 @@ public class PlayerLook : MonoBehaviour
 
     private void Awake()
     {
-        LockCursor();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         xAxisClamp = 0.0f;
     }
 
     private void Update()
     {
         CameraRotation();
-    }
-
-    private void LockCursor()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void CameraRotation()

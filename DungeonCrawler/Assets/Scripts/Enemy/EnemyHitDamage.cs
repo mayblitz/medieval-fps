@@ -5,12 +5,10 @@ public class EnemyHitDamage : MonoBehaviour, IDirectionHittable
 {
     private Stats stats;
     private IDirectionKillable killable;
-    bool isDead;
 
     void Start()
     {
         stats = GetComponent<Stats>();
-        isDead = false;
         killable = (IDirectionKillable)GetComponent(typeof(IDirectionKillable));
         if (killable == null)
             throw new MissingComponentException("Requires implementation of IDirectionKillable");
@@ -20,9 +18,8 @@ public class EnemyHitDamage : MonoBehaviour, IDirectionHittable
     {
         stats.health -= damage;
 
-        if (stats.health <= 0 && !isDead)
+        if (stats.health <= 0 && !killable.IsDead)
         {
-            isDead = true;
             int force = damage / 2;
             killable.Kill(force, direction);
         }

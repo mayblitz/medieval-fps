@@ -6,31 +6,22 @@ public class EnemyKill : MonoBehaviour, IDirectionKillable
     private Rigidbody[] rigidbodies;
     private Transform player;
 
+    public bool IsDead { get; private set; }
+
     void Start()
     {
         rigidbodies = GetComponentsInChildren<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         DisableRagdoll();
+        IsDead = false;
     }
 
     public void Kill(int force, Direction direction)
     {
-        GetComponent<CapsuleCollider>().enabled = false;
-        GetComponent<Animator>().enabled = false;
-        GetComponent<EnemyAI>().enabled = false;
-
+        IsDead = true;
+        DisableComponents();
         EnableRagdoll();
- 
-        Vector3 vectorForce;
-
-        if (direction == Direction.Backward)
-            vectorForce = player.forward;
-        else if (direction == Direction.Left)
-            vectorForce = player.right;
-        else if (direction == Direction.Right)
-            vectorForce = -player.right;
-        else
-            vectorForce = -transform.up;
+        Vector3 vectorForce = GetDirectionForce(direction);
 
         foreach (Rigidbody rb in rigidbodies)
         {
@@ -41,6 +32,25 @@ public class EnemyKill : MonoBehaviour, IDirectionKillable
 
         this.gameObject.layer = LayerMask.NameToLayer("Dead");
         Destroy(gameObject, 60);
+    }
+
+    void DisableComponents()
+    {
+        GetComponent<CapsuleCollider>().enabled = false;
+        GetComponent<Animator>().enabled = false;
+        GetComponent<EnemyAI>().enabled = false;
+    }
+
+    Vector3 GetDirectionForce(Direction direction)
+    {
+        if (direction == Direction.Backward)
+            return player.forward;
+        else if (direction == Direction.Left)
+            return player.right;
+        else if (direction == Direction.Right)
+            return -player.right;
+        else
+            return -transform.up;
     }
 
     void EnableRagdoll()
